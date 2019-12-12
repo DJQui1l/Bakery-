@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+body {
+  margin: 0 auto;
+}
+
+#headline {
+
+  background-color: #808080;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+#headline:before{
+  content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0.5;
+    background-image: url('https://www.oliversmarket.com/wp-content/uploads/2016/10/FIXED-Bakery-Desserts-1.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#headline--title{
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  top: 50%;
+  width: 100%;
+  color: #eee;
+  padding: 39vh 0%;
+  font-size: 11vh;
+  z-index: 2;
+}
+
+/* #headline--bgimg1{
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width:100%;
+  z-index: 2;
+} */
