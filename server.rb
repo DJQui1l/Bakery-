@@ -2,12 +2,13 @@ require 'sinatra'
 require 'httparty'
 require './pastries'
 
-get '/'do
+get '/' do
   'hello'
   erb :index
 
 end
 
-get '/bakery' do
+get '/catalogs' do
+  'hello'
   erb :index, :layout => :catalogs
 end

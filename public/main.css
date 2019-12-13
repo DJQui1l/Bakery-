@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Railway&display=swap');
 
 body {
   margin: 0 auto;
@@ -6,10 +6,11 @@ body {
 
 #headline {
 
-  background-color: #808080;
+  background-color: #121212;
   position: relative;
   text-align: center;
   overflow: hidden;
+  height: 100vh;
 }
 
 #headline:before{
@@ -31,19 +32,32 @@ body {
 
 #headline--title{
   position: relative;
-  font-family: 'Playfair Display', serif;
-  top: 50%;
-  width: 100%;
-  color: #eee;
-  padding: 39vh 0%;
-  font-size: 11vh;
-  z-index: 2;
+font-family: 'Playfair Display', serif;
+font-weight: lighter;
+width: 56%;
+color: #eee;
+padding: 40vh 77p;
+font-size: 10vh;
+z-index: 2;
+margin: 35vh auto;
+/* text-shadow: 1px 1px 15px #000; */
+border: 13px solid #eee;
 }
 
-/* #headline--bgimg1{
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width:100%;
+#headline--click {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  width: 13%;
+  color: #eee;
+  padding: 40vh 77p;
+  font-size: 3vh;
   z-index: 2;
-} */
+  margin: 0vh auto;
+  /* text-shadow: 1px 1px 15px #000; */
+  border: 2px solid #eee;
+  top: -29vh;
+}
+ #headline--clicklink {
+   text-decoration: none;
+ }
