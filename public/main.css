@@ -72,16 +72,19 @@ body {
   z-index: 2;
   margin: 0vh auto;
 
-  text-shadow: 1px 1px 37px #101010;
-    border: 13px solid #eee;
-    box-shadow: 1px 1px 65px #303030;
-    
+
   border: 2px solid #eee;
   top: -29vh;
 
   transition: 0.5s;
 }
 
+#headline--title, #headline--click {
+  text-shadow: 1px 1px 37px #101010;
+    
+    box-shadow: 1px 1px 65px #303030;
+
+}
  #headline--clicklink {
    text-decoration: none;
 
