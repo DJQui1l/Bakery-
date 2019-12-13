@@ -51,8 +51,12 @@ body {
   font-size: 10vh;
   z-index: 2;
   margin: 32vh auto;
-  /* text-shadow: 1px 1px 15px #000; */
+
   border: 13px solid #eee;
+
+  text-shadow: 1px 1px 37px #101010;
+    border: 13px solid #eee;
+    box-shadow: 1px 1px 65px #303030;
   }
 
 
@@ -67,7 +71,11 @@ body {
   font-size: 4vh;
   z-index: 2;
   margin: 0vh auto;
-  /* text-shadow: 1px 1px 15px #000; */
+
+  text-shadow: 1px 1px 37px #101010;
+    border: 13px solid #eee;
+    box-shadow: 1px 1px 65px #303030;
+    
   border: 2px solid #eee;
   top: -29vh;
 
