@@ -8,7 +8,17 @@ get '/' do
 
 end
 
-get '/catalogs' do
+get '/catalog' do
   'hello'
-  erb :index, :layout => :catalogs
+  erb :index, :layout => :catalog
+end
+# ----SEPERATE PAGES ---------
+get '/cakes' do
+  'cake pages'
+end
+get '/cookies' do
+  'cookie pages'
+end
+get '/muffins' do
+  'muffin pages'
 end
