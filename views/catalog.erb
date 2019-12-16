@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="main-mobile.css">
+
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
   </head>
@@ -13,22 +15,23 @@
 
     <nav id="navbar">
       <h1 id="navbar-title"> Quilliam McFancy's</h1>
-      <a href="#">About Us </a>
-      <a href="#">Pastries</a>
+      <a id="aboutUs" href="#">About Us </a>
+      <a id="pastries" href="#">Pastries</a>
       <!-- has grid list of all pastries with a cakes section, cookies section and muffins <section>
         can choose from a side menu which section you want to go to on the page.
         when item is clicked it lists the ingredients of that item.
         the goal is for each item to have a
       </section> -->
-      <a href="#">Drinks</a>
+      <a id="drinks" href="#">Drinks</a>
        <!-- <button type="button" name="pastry-dropdown">Pastries</button> -->
        <!-- <span id="pastry-dropdown-icon">
          <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 12 7.4">
         <path fill="inherit" d="M1.4,0L6,4.6L10.6,0L12,1.4l-6,6l-6-6L1.4,0z"></path>
       </svg>
     </span> -->
-    <a href="#"> Visit Us</a>
-    <a href="#">Contact Us</a>
+    <a id="drinks" href="/textyourself">Text Menu to Yourself</a>
+    <a id="visitUs" href="#"> Visit Us</a>
+    <a id="contactUs" href="#">Contact Us</a>
 
 
 
@@ -37,28 +40,31 @@
     <div id ="catalog-grid">
 
       <div id ="catalog-cakes-box">
-        <h2 id ="catalog-cakes-title">Cakes</h2>
+        <a href="/cakes"><h2 id ="catalog-cakes-title">Cakes</h2></a>
       </div>
 
       <div id ="catalog-cookies-box">
-        <h2 id ="catalog-cookies-title">Cookies</h2>
+        <a href ="/cookies"><h2 id ="catalog-cookies-title">Cookies</h2></a>
       </div>
 
       <div id ="catalog-muffins-box">
-        <h2 id ="catalog-muffins-title">Muffins</h2>
+        <a href="/muffins"><h2 id ="catalog-muffins-title">Muffins</h2></a>
       </div>
 
     </div>
 
     <div id="visitContact-grid">
       <div id="visit-box">
-        <h2>Visit Us</h2>
+        <a href="#"><h2>Visit Us</h2></a>
+      </div>
+      <div id="drinks-box">
+        <a href="#"><h2>Drinks</h2></a>
       </div>
       <div id="aboutUs-box">
-        <h2>About Us</h2>
+        <a href="#"><h2>About Us</h2></a>
       </div>
 
     </div>
-
+    <script src="catalog.js" charset="utf-8"></script>
   </body>
 </html>

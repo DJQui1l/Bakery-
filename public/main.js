@@ -2,7 +2,7 @@ headlineBG = document.getElementById('headline')
 headlinetitle = document.getElementById('headline-title')
 subHeadlineClick = document.getElementById('headline-click')
 subHeadlineClickLink = document.getElementById('headline-clicklink')
-
+navbarElement = document.getElementById('navbar')
 
 
 function toggleHeadlineImg(){
@@ -11,12 +11,3 @@ function toggleHeadlineImg(){
   })
 }
 toggleHeadlineImg()
-
-
-
-
-  window.onload = function scroll() {
-    console.log('onload scroll function works');
-    catalogbox = document.getElementById('catalog-grid')
-    catalogbox.scrollIntoView();
-  }

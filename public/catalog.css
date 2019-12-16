@@ -2,27 +2,29 @@
 
 
 html {
-  /* overflow: hidden; */
+  overflow-x: hidden;
 
 }
 body {
   font-family: 'Raleway', sans-serif;
- margin: 0 auto;
+  margin: 0 auto;
 
 }
+
+/* -------------NAVBAR------------------ */
 #navbar {
   color: #eee;
   background-color: #101010;
   font-family: 'Playfair Display', serif;
   display: grid;
-  grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+  grid-template-columns:  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%;
   grid-template-rows: 100%;
   /* padding: 2%; */
   align-items: center;
   text-align: center;
 }
 }
-#navbar h1{
+#navbar-title{
   color: #eee;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
@@ -37,44 +39,92 @@ body {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
 }
+
+/* -----------CATALOG GRID------------- */
 #catalog-grid{
 
   /* height: 10vh; */
   display:grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-rows: 100%;
-  grid-gap: 2px;
+  /* grid-gap: 2px; */
 }
+
+
+#catalog-cakes-box {
+  background-image: url('https://pinchofyum.com/wp-content/uploads/Chocolate-Cake-Recipe.jpg');
+  background-size: 100%;
+  transition: 1s;
+
+  background-position: center;
+}
+
+
+#catalog-cookies-box {
+  background-image: url('https://beamingbaker.com/wp-content/uploads/2019/10/IGT2-Chocolate-Chip-Homemade-Cashew-Butter-Cookies-Recipe-Vegan-Paleo-Flourless-Oil-Free-2.jpg');
+  background-size: 100%;
+  transition: 1s;
+  background-position: center;
+}
+
+#catalog-muffins-box{
+background-image: url('https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/Lemon-Meringue-Muffins_exps41158_TH143190D10_10_7bC_RMS.jpg');
+background-size: 100%;
+transition: 1s;
+background-position: center;
+}
+
+#catalog-cakes-box:hover,
+#catalog-cookies-box:hover,
+#catalog-muffins-box:hover{
+
+background-size: 125%;
+background-position: center;
+
+}
+
+
 
 #catalog-cakes-box,
 #catalog-cookies-box,
 #catalog-muffins-box,
 #visit-box,
+#drinks-box,
 #aboutUs-box {
   text-align: center;
-      margin-top: auto;
-      /* margin-bottom: auto; */
-      text-align: center;
-      border: 1px solid #333;
-      padding: 29%;
+
+  text-align: center;
+  border: 1px solid #333;
+  padding: 29%;
 }
+
 
 #catalog-cakes-title,
 #catalog-cookies-title,
-#catalog-muffins-title,
-{
-  border: 1px solid #eee;
-    width: 100%;
-    /* float: left; */
-    margin: 0 auto;
-    text-align: center;
+#catalog-muffins-title{
+  color: #eee;
+  font-size: 5vh;
+  padding: 2%;
+  border: 5px solid #eee;
+  text-shadow: 1px 1px 37px #101010;
+  box-shadow: 1px 1px 65px #303030;
+  width: 100%;
+
+  margin: 0 auto;
+  text-align: center;
 }
 
+/* -----------VISIT CONTACT GRID----------------- */
 #visitContact-grid {
-  position: relative;
-display: grid;
-grid-template-columns: 50% 50%;
-grid-template-rows: 100%;
-text-align: center;
-padding: 11%;
+
+  display:grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 100%;
+  /* text-align: center; */
+/* padding: 11%; */
+}
+
+
+#visitContact-grid a, #catalog-grid a{
+  text-decoration: none;
 }
