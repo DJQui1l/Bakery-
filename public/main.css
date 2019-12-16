@@ -15,6 +15,7 @@ html {
 
 body {
   margin: 0 auto;
+  /* overflow: hidden; */
 }
 
 #headline {
@@ -45,7 +46,7 @@ body {
 }
 
 
-#headline--title{
+#headline-title{
   position: relative;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
@@ -63,7 +64,7 @@ body {
 
 
 
-#headline--click {
+#headline-click {
   position: relative;
   font-family: 'Raleway', sans-serif;
   font-weight: lighter;
@@ -81,20 +82,20 @@ body {
   transition: 0.5s;
 }
 
-#headline--click:hover {
+#headline-click:hover {
   width: 15.5%;
   padding: 2% 3%;
   font-size: 6vh;
   /* transition: 1s; */
 }
 
-#headline--title, #headline--click {
+#headline-title, #headline-click {
   text-shadow: 1px 1px 37px #101010;
 
     box-shadow: 1px 1px 65px #303030;
 
 }
- #headline--clicklink {
+ #headline-clicklink {
    text-decoration: none;
 
  }

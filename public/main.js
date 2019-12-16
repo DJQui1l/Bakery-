@@ -1,9 +1,8 @@
 headlineBG = document.getElementById('headline')
-headlinetitle = document.getElementById('headline--title')
-subHeadlineClick = document.getElementById('headline--click')
-subHeadlineClickLink = document.getElementById('headline--clicklink')
+headlinetitle = document.getElementById('headline-title')
+subHeadlineClick = document.getElementById('headline-click')
+subHeadlineClickLink = document.getElementById('headline-clicklink')
 
-catalogbox = document.getElementById('catalog-grid')
 
 
 function toggleHeadlineImg(){
@@ -16,8 +15,8 @@ toggleHeadlineImg()
 
 
 
-window.onload = function scroll() {
-  console.log('testing');
-catalogbox.scrollTo(0,0)
-// catalogbox.scrollIntoView({behavior: "smooth"})
-}
+  window.onload = function scroll() {
+    console.log('onload scroll function works');
+    catalogbox = document.getElementById('catalog-grid')
+    catalogbox.scrollIntoView();
+  }
