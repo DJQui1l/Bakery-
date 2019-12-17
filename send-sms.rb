@@ -7,17 +7,18 @@ auth_token = ENV['TWILIO_AUTH_TOKEN']
 
 @client = Twilio::REST::Client.new(account_sid, auth_token)
 
-# @input = '7189301853'
-#
+
+
+
 # from = ENV['TWILIO_NUMBER'] # Your Twilio number
-# to = '+1'+ %(#{input})# Your mobile phone number
+# to = @number# Your mobile phone number
 #
-# puts to
 #
-# # message = @client.messages.create(
-# #      body: 'This is a test',
-# #      from: from,
-# #      to: to
-# #    )
 #
-# # puts message.sid
+# message = @client.messages.create(
+#      from: from,
+#      to: to,
+#      body: 'This is a test'
+#    )
+#
+# puts message.sid

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Railway&display=swap');
+body {
+  margin: 0 auto;
+}
+
+
+#navbar {
+  color: #eee;
+  background-color: #101010;
+  font-family: 'Playfair Display', serif;
+  display: grid;
+  grid-template-columns:  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%;
+  grid-template-rows: 100%;
+  padding: 1%;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+#navbar-title{
+  color: #eee;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+  text-decoration: none;
+  border: 5px solid #eee;
+  /* text-shadow: 1px 1px 37px #101010; */
+  /* box-shadow: 1px 1px 65px #303030; */
+  margin:0
+}
+#navbar-title h1{
+  cursor: pointer;
+  margin: 0;
+}
+
+#aboutUs, #pastries, #drinks, #visitUs, #contactUs {
+  color: #eee;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}

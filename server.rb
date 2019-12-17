@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'httparty'
 require './pastries'
-require './send-sms'
+
 require 'twilio-ruby'
 
 get '/' do
@@ -15,11 +15,6 @@ get '/catalog' do
   erb :index, :layout => :catalog
 end
 
-get '/textyourself' do
-  erb :textyourself
-end
-
-
 
 # ----SEPERATE PAGES ---------
 get '/cakes' do
@@ -30,4 +25,31 @@ get '/cookies' do
 end
 get '/muffins' do
   'muffin pages'
+end
+
+get '/pastries' do
+
+  erb :pastries
+end
+
+get '/drinks' do
+  erb :drinks
+end
+
+
+get '/textyourself' do
+  erb :textyourself
+end
+
+post '/textyourself' do
+  @input = params['phone-number']
+  @number = '+1' + @input.to_s
+
+  load("send-sms.rb")
+
+  erb :textyourself, :layout => :textyourself_Submission
+end
+
+get '/visitus' do
+  erb :visitus
 end

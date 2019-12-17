@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Railway&display=swap');
+body {
+  margin: 0 auto;
+}
+
+
+
+#navbar {
+  color: #eee;
+  background-color: #101010;
+  font-family: 'Playfair Display', serif;
+  display: grid;
+  grid-template-columns:  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%;
+  grid-template-rows: 100%;
+  padding: 1%;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+#navbar-title{
+  color: #eee;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+  text-decoration: none;
+  border: 5px solid #eee;
+  /* text-shadow: 1px 1px 37px #101010; */
+  /* box-shadow: 1px 1px 65px #303030; */
+  margin:0
+}
+#navbar-title h1{
+  cursor: pointer;
+  margin: 0;
+}
+
+#aboutUs, #pastries, #drinks, #visitUs, #contactUs {
+  color: #eee;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+#drinks-grid{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+}
+
+#good-water-title,
+#better-water-title,
+#best-water-title {
+
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+  width: 56%;
+  color: #eee;
+  padding: 2%;
+  font-size: 9vh;
+  z-index: 2;
+  text-align: center;
+  margin: 13vh auto;
+  border: 13px solid #eee;
+  transition: 0.5s;
+}
+
+#good-water, #Better-water, #best-water{
+  background-color: #000;
+}
+#good-water h2, #Better-water h2, #best-water h2{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: white;
+}
+#good-water-img{
+  background-image: url('https://i.pinimg.com/originals/a3/b1/63/a3b1636293b5649ac20139bfbfac4633.jpg');
+  background-size:cover;
+  background-position: center;
+}
+
+#better-water-img{
+  background-image: url('https://www.ctwater.com/media/2205/bigstock-closeup-of-a-refreshing-glass-67671709.jpg');
+  background-size:cover;
+  background-position: center;
+}
+
+#best-water-img{
+  background-image: url('https://r1.ilikewallpaper.net/ipad-air-wallpapers/download/4604/Water-Drop-iPad-4-wallpaper-ilikewallpaper_com.jpg');
+  background-size:cover;
+  background-position: center;
+}

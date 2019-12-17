@@ -19,22 +19,28 @@ body {
   display: grid;
   grid-template-columns:  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%;
   grid-template-rows: 100%;
-  /* padding: 2%; */
+  padding: 1%;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
-}
+
 #navbar-title{
   color: #eee;
   font-family: 'Playfair Display', serif;
   font-weight: lighter;
-
-  border: 13px solid #eee;
-  text-shadow: 1px 1px 37px #101010;
-  box-shadow: 1px 1px 65px #303030;
+  text-decoration: none;
+  border: 5px solid #eee;
+  /* text-shadow: 1px 1px 37px #101010; */
+  /* box-shadow: 1px 1px 65px #303030; */
+  margin:0
+}
+#navbar-title h1{
+  cursor: pointer;
+  margin: 0;
 }
 
-#navbar a {
+#aboutUs, #pastries, #drinks, #visitUs, #contactUs {
   color: #eee;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -76,7 +82,10 @@ background-position: center;
 
 #catalog-cakes-box:hover,
 #catalog-cookies-box:hover,
-#catalog-muffins-box:hover{
+#catalog-muffins-box:hover,
+#visit-box:hover,
+#drinks-box:hover,
+#aboutUs-box:hover{
 
 background-size: 125%;
 background-position: center;
@@ -96,20 +105,23 @@ background-position: center;
   text-align: center;
   border: 1px solid #333;
   padding: 29%;
+
 }
 
 
 #catalog-cakes-title,
 #catalog-cookies-title,
-#catalog-muffins-title{
+#catalog-muffins-title,
+#visit-box-title,
+#drinks-box-title,
+#aboutUs-box-title{
   color: #eee;
   font-size: 5vh;
   padding: 2%;
   border: 5px solid #eee;
-  text-shadow: 1px 1px 37px #101010;
-  box-shadow: 1px 1px 65px #303030;
+  text-shadow: 0px 3px 7px #000000;
+  box-shadow: 1px 1px 12px #303030;
   width: 100%;
-
   margin: 0 auto;
   text-align: center;
 }
@@ -127,4 +139,25 @@ background-position: center;
 
 #visitContact-grid a, #catalog-grid a{
   text-decoration: none;
+}
+
+#visit-box {
+  background-image: url('https://assets.bonappetit.com/photos/5b15af0e8adf21470dda67cf/1:1/w_3250,h_3250,c_limit/buttercream-bakery-lede.jpg');
+  background-size: 100%;
+  transition: 1s;
+  background-position: center;
+}
+
+#drinks-box {
+  background-image: url('https://img-aws.ehowcdn.com/640x640/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/d3710fc8b73f444ba514f83dabcd8f22');
+  background-size: 100%;
+  transition: 1s;
+  background-position: center;
+}
+
+#aboutUs-box{
+  background-image: url('https://www.tasteofhome.com/wp-content/uploads/2018/01/Gingerbread-Cutout-Cookies_EXPS_SDDJ19_20072_C07_18_2b-2.jpg');
+  background-size: 100%;
+  transition: 1s;
+  background-position: center;
 }

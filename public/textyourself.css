@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Railway&display=swap');
+
+body {
+ background-color: #303030;
+}
+#headline-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+#headline-title{
+  position: relative;
+      font-family: 'Playfair Display', serif;
+      font-weight: lighter;
+      width: 56%;
+      color: #eee;
+      padding: 2%;
+      font-size: 9vh;
+      z-index: 2;
+      text-align: center;
+      margin: 13vh auto;
+      border: 13px solid #eee;
+      transition: 0.5s;
+  }
+
+#text-box{
+  font-family: 'Raleway', sans-serif;
+font-weight: 100;
+/* background-color: #eee; */
+/* align-content: center; */
+width: 50%;
+margin: 0 auto;
+text-align: center;
+padding: 2%;
+color: #eee;
+border: 13px solid;
+}
+
+#form-title {
+  margin: 0 auto;
+}
+form {
+  margin: 0 auto;
+}
+#input-phone{
+  text-align: center;
+width: 50%;
+margin: 2% auto;
+padding: 2%;
+}
+#input-submit{
+  width: 50%;
+  padding: 2%;
+  /* background-color: none; */
+  border: 1px solid #eee;
+}
