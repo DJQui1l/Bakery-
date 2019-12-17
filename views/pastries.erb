@@ -13,10 +13,40 @@
 </nav>
 
 <div id="pastries-grid">
-  <h1>Cakes</h1>
+
+  <% @cakes.each do |cake| %>
   <div id = "cakes-box">
-    <h1> <%=@pineapple_showpiece.description%></h1>
+    <div id ="img-box">
 
+      <style media="screen">
 
+      </style>
+    <!-- <img src="<%=cake.img%>"> -->
+    </div>
+    <h1> <%=cake.description%></h1>
+    <h2> <%=cake.price%></h2>
   </div>
+
+  <%end%>
+
+  <% @cookies.each do |cookie| %>
+  <div id = "cookies-box">
+    <div id ="img-box">
+    <!-- <img src="<%cookie.img%>"> -->
+  </div>
+    <h1> <%=cookie.description%></h1>
+    <h2> <%=cookie.price%></h2>
+  </div>
+
+  <%end%>
+  <% @muffins.each do |muffin| %>
+  <div id = "muffins-box">
+    <div id ="img-box">
+    <!-- <img src="<%=muffin.img%>"> -->
+  </div>
+    <h1> <%=muffin.description%></h1>
+    <h2> <%=muffin.price%></h2>
+  </div>
+
+  <%end%>
 </div>
