@@ -13,6 +13,7 @@ body {
 
 /* -------------NAVBAR------------------ */
 #navbar {
+
   color: #eee;
   background-color: #101010;
   font-family: 'Playfair Display', serif;
@@ -120,7 +121,7 @@ background-position: center;
   padding: 2%;
   border: 5px solid #eee;
   text-shadow: 0px 3px 7px #000000;
-  box-shadow: 1px 1px 12px #303030;
+  box-shadow: 1px 1px 12px #101010;
   width: 100%;
   margin: 0 auto;
   text-align: center;

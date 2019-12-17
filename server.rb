@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'httparty'
-require './pastries'
+# require './pastries'
+
 
 require 'twilio-ruby'
 
@@ -28,7 +29,7 @@ get '/muffins' do
 end
 
 get '/pastries' do
-
+  load("pastries.rb")
   erb :pastries
 end
 
