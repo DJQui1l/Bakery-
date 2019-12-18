@@ -77,7 +77,7 @@ post '/textyourself' do
   # load("send-sms.rb")
   puts 'working in server'
 
-  send_sms(@number)
+  send_sms(@number, @cookies)
 
 
   erb :textyourself, :layout => :textyourself_Submission

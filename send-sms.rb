@@ -1,12 +1,12 @@
 require 'twilio-ruby'
 
 
-def send_sms(number)
+def send_sms(number, cookies)
 
 
 
 
-  puts number
+
   puts 'WORKING!!
   '
 # Your Account Sid and Auth Token from twilio.com/console
@@ -27,10 +27,11 @@ from = ENV['TWILIO_NUMBER'] # Your Twilio number
 message = @client.messages.create(
      from: from,
      to: to,
-     body: 'Cookies:
-      Chocolate-Chip
-      Lemon Cookies
-      Red Velvet'
+     body: %(#{cookies})
+     # 'Cookies:
+     #  Chocolate-Chip
+     #  Lemon Cookies
+     #  Red Velvet'
    )
 
 puts message.sid

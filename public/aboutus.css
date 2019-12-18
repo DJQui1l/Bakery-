@@ -1,3 +1,40 @@
+body {
+  margin: 0 auto;
+  background-color: #000;
+}
+
+#navbar {
+  color: #eee;
+  background-color: #101010;
+  font-family: 'Playfair Display', serif;
+  display: grid;
+  grid-template-columns:  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%  14.2857%;
+  grid-template-rows: 100%;
+  padding: 1%;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  text-decoration: none;;
+}
+
+#navbar-title{
+  color: #eee;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+  text-decoration: none;
+  border: 5px solid #eee;
+  /* text-shadow: 1px 1px 37px #101010; */
+  /* box-shadow: 1px 1px 65px #303030; */
+  margin:0
+}
+
+#navbar-title h1{
+  cursor: pointer;
+  margin: 0;
+}
+
+
 #headline {
 
   background-color: #555555;
@@ -5,24 +42,6 @@
   text-align: center;
   overflow: hidden;
   height: 100vh;
-}
-
-#headline:before{
-  content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    opacity: 0.5;
-    background-image: url('https://www.oliversmarket.com/wp-content/uploads/2016/10/FIXED-Bakery-Desserts-1.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-    overflow: hidden;
-    filter: blur(5px);
 }
 
 

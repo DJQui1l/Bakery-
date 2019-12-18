@@ -4,7 +4,7 @@
 
 <nav id="navbar">
   <a id="navbar-title" href = "./catalog"><h1 > Quilliam McFancy's</h1></a>
-  <a id="aboutUs" href="#">About Us </a>
+  <a id="aboutUs" href="/aboutus">About Us </a>
   <a id="pastries" href="/pastries">Pastries</a>
   <a id="drinks" href="/drinks">Drinks</a>
   <a id="drinks" href="/textyourself">Text The Menu To Yourself</a>
@@ -17,11 +17,7 @@
   <% @cakes.each do |cake| %>
   <div id = "cakes-box">
     <div id ="img-box">
-
-      <style media="screen">
-
-      </style>
-    <!-- <img src="<%=cake.img%>"> -->
+    <img src="<%=cake.img%>">
     </div>
     <h1> <%=cake.description%></h1>
     <h2> <%=cake.price%></h2>
@@ -32,7 +28,7 @@
   <% @cookies.each do |cookie| %>
   <div id = "cookies-box">
     <div id ="img-box">
-    <!-- <img src="<%cookie.img%>"> -->
+    <img src="<%cookie.img%>">
   </div>
     <h1> <%=cookie.description%></h1>
     <h2> <%=cookie.price%></h2>
@@ -42,7 +38,7 @@
   <% @muffins.each do |muffin| %>
   <div id = "muffins-box">
     <div id ="img-box">
-    <!-- <img src="<%=muffin.img%>"> -->
+    <img src="<%=muffin.img%>">
   </div>
     <h1> <%=muffin.description%></h1>
     <h2> <%=muffin.price%></h2>
