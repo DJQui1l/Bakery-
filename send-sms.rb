@@ -27,11 +27,11 @@ from = ENV['TWILIO_NUMBER'] # Your Twilio number
 message = @client.messages.create(
      from: from,
      to: to,
-     body: %(#{cookies})
-     # 'Cookies:
-     #  Chocolate-Chip
-     #  Lemon Cookies
-     #  Red Velvet'
+     body:
+     'Cookies:
+      Chocolate-Chip
+      Lemon Cookies
+      Red Velvet'
    )
 
 puts message.sid
