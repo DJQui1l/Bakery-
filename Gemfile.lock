@@ -14,9 +14,11 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     mustermann (1.0.3)
+    nokogiri (1.10.7)
+      mini_portile2 (~> 2.4.0)
     nokogiri (1.10.7-x64-mingw32)
       mini_portile2 (~> 2.4.0)
-    rack (2.0.8)
+    rack (2.1.4)
     rack-protection (2.0.7)
       rack
     sinatra (2.0.7)
@@ -31,11 +33,12 @@ GEM
       nokogiri (>= 1.6, < 2.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
   httparty!
-  rack (~> 2.0, >= 2.0.8)!
+  rack (~> 2.1)!
   sinatra!
   twilio-ruby!
 
